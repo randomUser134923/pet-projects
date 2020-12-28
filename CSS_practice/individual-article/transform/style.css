@@ -1,0 +1,23 @@
+.elem {
+    background: blueviolet;
+    width: 300px;
+    height: 150px;
+    margin: 20px auto;
+
+}
+
+@keyframes moveToRight {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(300px);
+    }    
+}
+
+.elem:hover {
+    opacity: 0.5;
+    transform: scale(1.1); 
+    animation: moveToRight 2s ease-in-out;
+    animation-delay: 100ms;
+}
