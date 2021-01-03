@@ -1,5 +1,7 @@
 /* https://freefrontend.com/css-sliders/ */
-
+/* Color Pallete
+https://codepen.io/afranceschetti/pen/zNWeVg
+*/
 
 * {
     padding: 0;
@@ -21,11 +23,11 @@ header {
     height: 80px;
     width: 100%;
     background-color: #FFFFFF;
+
 }
 
 body {
     font-family: 'NanumGothic', 'serif';
-
 }
 
 ul {
@@ -33,15 +35,25 @@ ul {
     text-decoration: none;
 }
 
+li {
+    text-decoration: none;
+}
 
 a {
     text-decoration: none;
 }
 
+ li a { text-decoration: none; color:white; }
+ li a:visited { text-decoration: none; color:white; }
+ li a:hover { text-decoration: none; color:white; }
+ li a:focus { text-decoration: none; color:white; }
+ li a:hover, .navBtn:active { text-decoration: none; color:white; }
+
 .menu-wrapper {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 90%;
+    height: 100%;
     justify-content: space-between;
     align-items: center;    
 }
@@ -49,7 +61,9 @@ a {
 .menu-bar {
     display: flex;
     flex-direction: row;
+    height: 100%;
     align-items: center;
+    
 }
 
 .icon-bar {
@@ -71,24 +85,40 @@ a {
     margin-right: 10px;
 }
 
+
+
 .menu-bar li a {
     color: black;
+
 }
 
 .menu-bar li a:hover {
-    color: blue;
+    color: #888888;
 }
 
 
 .home , .about, .offer, .contact {
     display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    margin-right: 40px;
+    margin-right: 30px;
 }
 
+.home_cont {
+    margin-right: 50px;
+}
 
+.home { 
+    flex:2;
+
+}
+
+.logo {
+    height:60px;
+    width: 60px;
+}
 
 .contact {
     margin-right: 0px;
@@ -99,8 +129,67 @@ a {
     position: relative;    
     display: flex;
     flex-direction: column;
-    height: 1750px;
+    height: 2250px;
 
+}
+
+
+.essential-info-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    color: white;
+}
+
+.hour-box-wrapper , .price-box-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 85%;
+    font-size: 20px;
+
+}
+
+.hour-box , .price-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    width: 90%;
+    height: 45%;
+    border: 1px solid white;
+    line-height: 1.3em;
+    border-radius: 10px;
+    background: #151819;    
+}
+
+.price-box { 
+    border : 1px solid white;
+    height: 95%;
+}
+
+.oil-put-img {
+    position: absolute;
+    left:5%;
+    top:22.5%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+
+    
+}
+
+.center-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-bottom: 10px;
+    font-size: 30px;
 }
 
 /*                           Sliding banner                           */
@@ -134,6 +223,10 @@ a {
     width: 270px;
     height: 90%;
     margin-right: 3%;
+}
+
+.value1:hover{
+    background-color: #BBBBBB;
 }
 
 .value-text-container {
@@ -182,44 +275,27 @@ a {
     mix-blend-mode: multiply;    
 }
 
-.reviews {
+.products {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 500px;
+    height: 750px;
     background-color: #AAAAAA;
 }
 
-.review-text {
+.product {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 75px;
-    font-size: 30px;
-    
+    align-items: center; 
+    border: 1px solid black;
+    width: 30%;
+    height: 80%;
+
+    margin-right: 3%;
 }
 
-.review-box-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    height: 300px;
-
-}
-
-.review-box-1 {
-    margin-right: 20px;    
-}
-
-.review-box-1 , .review-box-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    width: 40%;
-    height: 100%;
+.product-clean {
+    margin-right: 0;
 }
 
 blockquote{
@@ -263,26 +339,57 @@ blockquote span{
     display: flex;
     justify-content: center;
     align-items: center;   
-    height: 75px;
+    height: 750px;
 }
 footer {
-    height: 100px;
+    display:flex;
+    flex-direction: column;
+    height: 300px;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     color: white;
-    background-color: #888888;
+    background-color: #151819;
     font-weight: bold;
-    line-height: 50px;
+    line-height: 1.6em;
     vertical-align: middle;
 }
+.ft-title {
+    display: flex; 
+    margin-top: 0.7em;
+    margin-bottom: 0.3em;
+    justify-content: center;
+    font-size: 1.3em;
+}
 
+.footer-explain {
+    display: flex;
+    justify-content:space-between;
+
+    align-items: center;
+    height: 80%;
+}
+
+.ft-company , .ft-contact , .ft-address {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    height: 100%;
+    width: 30%;
+}
+
+.ft-company ul li{
+    color: white;
+}
 
 .copyright {
-    height: 5px;
-
+    display:flex;
+    justify-content: center;
+    height: 30%;
+    font-size: 0.7em;
 }
 
 .gas-station-name {
-    color: orange;
+    color: #a33131;
     height: 16px;
+    font-weight: bold
 }

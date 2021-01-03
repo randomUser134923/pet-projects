@@ -4,43 +4,41 @@
         <meta charset="utf-8"/>        
         <link rel="stylesheet" href="./css/style.css" type="text/css" />
         <link rel="stylesheet" href="./css/banner.css" type="text/css" />
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />        
         <script type="text/javascript" src="./js/jquery-3.5.1.js"></script>        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>.
         <script type="text/javascript" src="./js/banner.js"></script>
-        
+        <script> 
+        $(function(){
+          $("#header").load("./header.html"); 
+          $("#footer").load("./footer.html");           
+        });
+        </script>         
 
     </head>
     
     <body>
-        <header>
-            <div class="menu-wrapper">
-                <ul class="menu-bar">
-                    <li class="home_cont"><a href="#" class="home">율곡행복주유소</a></li>
-                    <li class="about_cont"><a href="#" class="about">정보</a></li>
-                    <li class="offer_cont"><a href="#" class="offer">제품</a></li>
-                    <li class="contract_cont"><a href="#" class="contact">연락처</a></li>
-                </ul>
-                
-                <ul class="icon-bar">
-                    <li><img class="map-icon" src="./images/map.png" /></li>
-                    <li><img class="mail-icon" src="./images/mail.png" /></li>
-                    <li><img class="call-icon" src="./images/call.png" /></li>
-                </ul>
-                
-            </div>
-            
-        </header>
+        <div id="header"></div>
         
         <div class="content-wrapper">
-            <button onclick="prev()">&laquo;</button>
+
             <div class="scroller">
+                <ul class="slideshow">
+                	<li class="slide"><span></span></li>
+                    <li class="slide"><span></span></li>
+                	<li class="slide"><span></span></li>
+                	<li class="slide"><span></span></li>
+                	<li class="slide"><span></span></li>
+                </ul>         
+            
+                <!--
                 <ul class="items">
                     <li class="item" style="background-image:url(./images/gas-station-1.jpg);"></li>
                     <li class="item" style="background-image:url(./images/img2.jpg);"></li>
                     <li class="item" style="background-image:url(./images/img3.jpg);"></li>
                 </ul>    
+                -->
             </div>
+
+
             
             <div class="values">
                 <div class="value1">
@@ -85,26 +83,54 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="reviews">
-                <div class="review-text">
-                    //TODO: 리뷰 Section
+
+            <!-- opening/closing hour , car wash hour , car wash price,  gas price, !-->
+            <div class="essential-info-wrapper">
+                <div class="hour-box-wrapper">
+                    <div class="hour-box opening-closing-hour">
+
+                        <div class="center-text">영업 시간</div>
+                        연중무휴 06:30AM - 02:00AM
+                    </div>
+                    <div class="hour-box car-wash-hour">
+                        <div class="center-text">세차시간</div>
+                        연중무휴 08:00AM - 20:00PM
+                    </div>
                 </div>
+                
+                <div class="price-box-wrapper">
+                    <div class="price-box">
+                        <div class="center-text"> products </div>
+                        <div class="petrol-price">
+                            휘발유: TODO:// 오피넷에서 받아오기
+                        </div>
+                        <div class="disel-price">
+                            디젤: TODO:// 오피넷에서 받아오기
+                        </div>
+                        세차: 6000원 ( 주유시 2000원 할인 )<br>
+                        ??? : ???
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="products">
+                <div class="product product-oil">
+                
+                </div>
+                
+                <div class="product product-carwash">
+                
+                </div>
+                
+                <div class="product product-clean">
+                
+                </div>
+                
             </div>
             
         </div>
         
-        <footer>
-            <div class="footer_explain">
-                <p>
-                    <span class="address">찾아오시는 길</span> (39660) 경북 김천시 혁신로 250 
-                    <span class="phone">전화번호</span> 054-435-7117 <br>
-                </p>            
-            </div>  
-            
-            <div class="copyright">
-                COPYRIGHT <span>율곡행복주유소</span><span>&copy</span> 2020 ALL RIGHTS RESERVED
-            </div>
-        </footer>
+        <div id="footer"></div>
     </body>
 </html>
