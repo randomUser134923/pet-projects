@@ -1,0 +1,37 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>        
+    </head>
+    <body>
+        <header>
+            <div class="menu-wrapper">
+                <ul class="menu-bar">
+                    <li class="home_cont">
+                        <a href="{% url 'index' %}" class="home">
+                            <img class= "logo" src="{% static 'main/images/logo.jpg' %}"/>    
+                            <span>율곡행복주유소</span>
+                        </a>
+
+                    </li>
+                    <li class="about_cont"><a href="{% url 'introduction' %}" class="about"><span>소개</span></a></li>
+                    <li class="offer_cont"><a href="{% url 'product' %}" class="offer"><span>제품</span></a></li>
+                    <li class="FAQ_cont"><a href="{% url 'faq' %}" class="faq"><span>자주 묻는 질문</span></a></li>
+                </ul>
+                
+                <ul class="icon-bar">
+                    <li>
+                        <a href="#map">
+                        <img class="map-icon" src="{% static 'main/images/map.png' %}" />
+                        </a>
+                    </li>
+                    <li><img class="call-icon" src="{% static 'main/images/call.png' %}" /></li>
+                </ul>
+                
+            </div>
+            
+        </header>        
+    </body>
+</html>

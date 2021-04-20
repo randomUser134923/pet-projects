@@ -1,0 +1,192 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8"/>        
+        <title>율곡행복주유소</title>        
+        <link rel="stylesheet" href="{% static 'main/css/style.css' %}" >
+        <link rel="stylesheet" href="{% static 'main/css/banner.css' %}" type="text/css" />
+        
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> -->
+        <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=0f7zqiyorm"></script>        
+        <script type="text/javascript" src="{% static 'main/js/jquery-3.5.1.js' %}"></script>        
+        <script type="text/javascript" src="{% static 'main/js/banner.js' %}"></script>
+        <script> 
+
+            /* CORS redirect issue, require server 
+            const url = 'https://www.opinet.co.kr/api/detailById.do?code=F980210414&id=A0033122&out=xml';
+            
+
+
+            window.onload = function(){
+                var request = new XMLHttpRequest();
+                request.open('GET', url);
+                request.setRequestHeader('Access-Control-Allow-Headers','*');
+                request.send();
+            };
+             
+            */
+        
+        
+        </script>         
+
+    </head>
+    
+    <body>
+        <div id="header">
+        {% include './header.html' %}
+        </div>
+        
+        <div class="content-wrapper">
+
+            <div class="scroller">
+                <ul class="slideshow">
+                	<li class="slide"><span></span></li>
+                    <li class="slide"><span></span></li>
+                	<li class="slide"><span></span></li>
+                	<li class="slide"><span></span></li>
+                	<li class="slide"><span></span></li>
+                </ul>         
+            
+                <!--
+                <ul class="items">
+                    <li class="item" style="background-image:url(./images/gas-station-1.jpg);"></li>
+                    <li class="item" style="background-image:url(./images/img2.jpg);"></li>
+                    <li class="item" style="background-image:url(./images/img3.jpg);"></li>
+                </ul>    
+                -->
+            </div>
+
+
+            
+            <div class="values">
+                <div class="value1">
+                    <div class ="value1-icon">
+                        <img class= "value-icon-common" src="{% static 'main/images/honest.png' %}"/>
+                    </div>      
+                    <div class="value-text-container">
+                        <div class="value-text-container-header">
+                            정직한 기름
+                        </div>
+                        <div class="value-text-container-explain">
+                            <p><span class="gas-station-name">율곡행복주유소</span> 는 정직한 기름을 정량으로 판매합니다.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="value2">
+                    <div class ="value2-icon">
+                        <img class= "value-icon-common" src="{% static 'main/images/kind.png' %}"/>
+                    </div>
+                    <div class="value-text-container">
+                        <div class="value-text-container-header">
+                            친절한 서비스
+                        </div>
+                        <div class="value-text-container-explain">
+                            <p><span class="gas-station-name">율곡행복주유소</span> 항상 친절한 서비스로 고객을 모십니다.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="value3">
+                    <div class ="value3-icon">
+                        <img class= "value-icon-common" src="{% static 'main/images/cheap.png' %}"/>
+                    </div>
+                    <div class="value-text-container">
+                        <div class="value-text-container-header">
+                            저렴한 가격
+                        </div>
+                        <div class="value-text-container-explain">
+                            <p><span class="gas-station-name">율곡행복주유소</span> 는 저렴한 가격으로 기름을 제공합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- opening/closing hour , car wash hour , car wash price,  gas price, !-->
+            <div class="essential-info-wrapper">
+                <div class="hour-box-wrapper">
+                    <div class="hour-box opening-closing-hour">
+
+                        <div class="center-text underline-text">영업 시간</div>
+                        연중무휴 06:30AM - 02:00AM
+                    </div>
+                    <div class="hour-box car-wash-hour">
+                        <div class="center-text underline-text">세차 시간</div>
+                        연중무휴 08:00AM - 20:00PM
+                    </div>
+                </div>
+                
+                <div class="price-box-wrapper">
+                    <div class="price-box">
+                        <div class="price-box-title center-text"> 간편 가격 </div>
+                        
+                        <div class="number-wrapper">
+                            <div class="petrol-price">
+                                <div>
+                                <span class="petrol">휘발유</span><span>: {{ B027 }} 원</span>
+                                </div>
+                                <div>
+                                <span class="disel">경유</span><span>: {{ D047 }} 원</span>
+                                </div>
+                            </div>
+                            
+                            <hr />
+                            
+                            <div class ="wash-price">
+                                <span> 자동세차: 4000 원</span>
+                                <br>
+                                <span class="reminder">
+                                    [!] 비주유시 2000원이 추가됩니다
+                                </span>
+                            </div>
+                            
+                            <hr/>
+                        </div>
+                        
+
+                        
+                        <div class="petrol-price-update">
+                            <span>가격 업데이트</span> <span>: {{yyyy}}.{{mm}}.{{dd}} </span>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="products">
+                <div id="map">
+            
+                </div>
+            </div>
+            
+        </div>
+
+        <script>
+        
+            var position = new naver.maps.LatLng(36.12238414887867, 128.18154424233294); 
+            
+            var mapOptions = {
+                center: new naver.maps.LatLng(36.12227414867867, 128.18128424233294),
+                zoom: 18
+            };
+            
+            var map = new naver.maps.Map('map', mapOptions);
+            
+            var marker = new naver.maps.Marker({
+                position: position,
+                map: map
+            });            
+        </script>          
+        
+        <div id="footer">
+        {% include './footer.html' %}
+        </div>
+        
+    </body>
+</html>

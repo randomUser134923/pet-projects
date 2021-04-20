@@ -1,0 +1,96 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>        
+        <link rel="stylesheet" href="{% static 'main/css/style.css' %}" >
+        <link rel="stylesheet" href="{% static 'main/css/product.css' %}" >        
+
+    </head>    
+
+    <body>
+        <div id="header">
+        {% include './header.html' %}
+        </div>        
+        
+        
+        <div class="product-container">
+            <div class="product-wrapper">
+                <div class="product-item">
+                    <div class="product-item-imgArea">
+                        <img class="product-item-img" src="{% static 'main/images/product/oil.jpg' %}"/>
+                    </div>
+                    <div class="product-item-textArea">
+                        <h3>PRODUCT-TITLE</h3>
+                        <hr />
+                        <p>제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        </p>
+                    </div>
+                    <div class="product-item-emptyArea"></div>
+                </div>
+                
+                <div class="product-item flex-row-reverse">
+                    <div class="product-item-imgArea">
+                        <img class="product-item-img" src="{% static 'main/images/product/carwash.jpg' %}"/>
+                    </div>
+                    <div class="product-item-textArea">
+                        <h3>세차</h3>
+                        <hr />
+                        <p>제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        </p>
+                    </div>              
+                    <div class="product-item-emptyArea"></div>
+                </div>
+                
+                <div class="product-item">
+                    <div class="product-item-imgArea">
+                        <img class="product-item-img" src="{% static 'main/images/product/bulls.jpg' %}"/>
+                    </div>
+                    <div class="product-item-textArea">
+                        <h3>차량 제품</h3>
+                        <hr />
+                        <p>제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        </p>
+                    </div>   
+                    <div class="product-item-emptyArea"></div>
+                </div>
+                
+                <div class="product-item flex-row-reverse">
+                    <div class="product-item-imgArea">
+                        <img class="product-item-img" src="{% static 'main/images/product/inside.png' %}"/>
+                    </div>
+                    <div class="product-item-textArea">
+                        <h3>내부세차</h3>
+                        <hr />
+                        <p>제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 제품설명. 
+                        </p>
+                    </div>           
+                    <div class="product-item-emptyArea"></div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div id="footer">
+        {% include './footer.html' %}
+        </div>   
+        
+    </body>
+    
+</html>

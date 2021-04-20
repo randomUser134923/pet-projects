@@ -1,0 +1,44 @@
+
+
+.intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    
+    margin: 0 auto;
+}
+
+.intro-wrapper span {
+    white-space: normal;
+    font-weight: bold;
+}
+
+.intro-title {
+    display: flex;
+    margin-top: 10px;
+}
+
+.intro-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+.intro-text {
+    display: flex;    
+    
+}
+
+.intro-text p {
+
+    text-align: center;
+    column-count: 2;
+    line-height: 1.7em;
+    overflow: hidden;
+
+    margin: 20px 0 40px 0;
+}

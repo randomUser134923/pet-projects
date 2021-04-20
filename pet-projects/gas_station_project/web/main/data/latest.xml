@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>                           
+           
+ 
+<RESULT>                                                         
+
+ <OIL>                                                  
+	<UNI_ID>A0033122</UNI_ID>         
+	<POLL_DIV_CO>SKE</POLL_DIV_CO>
+	<GPOLL_DIV_CO>   </GPOLL_DIV_CO>	
+	<OS_NM>율곡행복주유소</OS_NM>
+	<VAN_ADR>경북 김천시 율곡동 357</VAN_ADR>
+	<NEW_ADR>경북 김천시 혁신로 250 (율곡동)</NEW_ADR>
+	
+	<TEL>054-435-7117</TEL>
+	<SIGUNCD>0803</SIGUNCD>
+	<LPG_YN>N</LPG_YN>
+	<MAINT_YN>N</MAINT_YN>	
+	<CAR_WASH_YN>Y</CAR_WASH_YN>	
+	<CVS_YN>N</CVS_YN>		
+	<KPETRO_YN>N</KPETRO_YN>
+	<GIS_X_COOR>416520.22202</GIS_X_COOR>
+	<GIS_Y_COOR>391353.52722</GIS_Y_COOR>      
+	
+	  <OIL_PRICE>
+	   	<PRODCD>B027</PRODCD>   
+	   	<PRICE>1498</PRICE>
+	   	<TRADE_DT>20210420</TRADE_DT>
+	   	<TRADE_TM>105149</TRADE_TM>
+	  </OIL_PRICE>
+	
+	  <OIL_PRICE>
+	   	<PRODCD>D047</PRODCD>   
+	   	<PRICE>1298</PRICE>
+	   	<TRADE_DT>20210420</TRADE_DT>
+	   	<TRADE_TM>104009</TRADE_TM>
+	  </OIL_PRICE>
+	        
+ </OIL>                                                 
+                                             
+</RESULT>
